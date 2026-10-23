@@ -28,6 +28,22 @@ I architect autonomous multi-agent systems, build LLM/MCP tool optimization work
 
 ---
 
+### 🚀 Recent Open-Source Contributions & Fixes
+
+- **[toolism](https://github.com/rakeshnitb23/toolism)** — *Measure and safely slim the token cost of LLM tool and MCP schemas.*
+  - **Duplicate Tool Warnings** ([#49](https://github.com/rakeshnitb23/toolism/issues/49)): Surfaced parser warnings (such as duplicate tool names) in `toolism measure` across table, Markdown, and JSON reports.
+  - **Schema Dialect Detection** ([#62](https://github.com/rakeshnitb23/toolism/issues/62)): Added comprehensive test coverage for unknown JSON Schema URIs and fallbacks (100% coverage).
+  - **Nullable anyOf/oneOf Guard Fixtures** ([#60](https://github.com/rakeshnitb23/toolism/issues/60)): Added edge-case test fixtures for malformed anyOf/oneOf branches to guard safe schema rewrites.
+  - **Measure `--top N` Option** ([#68](https://github.com/rakeshnitb23/toolism/issues/68), [PR #73](https://github.com/rakeshnitb23/toolism/pull/73)): Added configurable top tool limits in CLI measurement reports.
+  - **GitHub Action Documentation** ([#64](https://github.com/rakeshnitb23/toolism/issues/64), [PR #74](https://github.com/rakeshnitb23/toolism/pull/74)): Documented all CI action inputs and outputs.
+  - **Changelog Compare Links** ([#69](https://github.com/rakeshnitb23/toolism/issues/69), [PR #75](https://github.com/rakeshnitb23/toolism/pull/75)): Added semver release diff links.
+
+- **[chatflow-agent](https://github.com/GustavoBaranda/chatflow-agent)** — *Lightweight, async multi-agent framework with SQLite persistence and handoffs.*
+  - **Handoff Target Resolution** ([#123](https://github.com/GustavoBaranda/chatflow-agent/issues/123)): Enforced agent tree uniqueness and authorized peer resolution during late handoffs in `Runner`.
+  - **WhatsApp Reaction & Event Handling** ([#121](https://github.com/GustavoBaranda/chatflow-agent/issues/121)): Hardened webhook parsing against malformed shapes and unhandled reaction/system events to prevent 500 errors.
+
+---
+
 ### 📊 GitHub Activity & Stats
 
 <div align="center">
